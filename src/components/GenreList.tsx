@@ -1,4 +1,4 @@
-import { Button, HStack, Image, List, ListItem, Spinner, Text } from "@chakra-ui/react";
+import { Button, HStack, Heading, Image, List, ListItem, Spinner, Text } from "@chakra-ui/react";
 import useGenres, { Genre } from "../hooks/useGenres";
 import getCroppedUrl from "../Services/image-url";
 
@@ -14,16 +14,19 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
     if (isLoading) return <Spinner />
 
     return (
-        <List>
-            {data.map(genre =>
-                <ListItem key={genre.id} paddingY='5px'>
-                    <HStack >
-                        <Image boxSize='32px' borderRadius={8} src={getCroppedUrl(genre.image_background)} />
-                        <Button fontWeight={genre.id === selectedGenre?.id ? 'bold': 'normal'} onClick={() => onSelectGenre(genre)} variant='link' overflow='hidden' fontSize='lg'>{genre.name}</Button>
-                    </HStack>
-                </ListItem>
-            )}
-        </List>
+        <>
+            <Heading fontSize='2xl' marginBottom={3}>Genres</Heading>
+            <List>
+                {data.map(genre =>
+                    <ListItem key={genre.id} paddingY='5px'>
+                        <HStack >
+                            <Image boxSize='32px' objectFit='cover' borderRadius={8} src={getCroppedUrl(genre.image_background)} />
+                            <Button fontWeight={genre.id === selectedGenre?.id ? 'bold' : 'normal'} onClick={() => onSelectGenre(genre)} variant='link' whiteSpace='normal' textAlign='left' fontSize='lg'>{genre.name}</Button>
+                        </HStack>
+                    </ListItem>
+                )}
+            </List>
+        </>
     );
 }
 
