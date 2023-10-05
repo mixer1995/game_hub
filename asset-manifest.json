@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/mixer1995/game_hub/static/css/main.fae00440.css",
+    "main.js": "/mixer1995/game_hub/static/js/main.04bcaa8b.js",
+    "static/js/787.f7d43f86.chunk.js": "/mixer1995/game_hub/static/js/787.f7d43f86.chunk.js",
+    "static/media/noImage.webp": "/mixer1995/game_hub/static/media/noImage.4468b2690a07844609fc.webp",
+    "static/media/logo.webp": "/mixer1995/game_hub/static/media/logo.aafbbd2862055a1da507.webp",
+    "index.html": "/mixer1995/game_hub/index.html",
+    "main.fae00440.css.map": "/mixer1995/game_hub/static/css/main.fae00440.css.map",
+    "main.04bcaa8b.js.map": "/mixer1995/game_hub/static/js/main.04bcaa8b.js.map",
+    "787.f7d43f86.chunk.js.map": "/mixer1995/game_hub/static/js/787.f7d43f86.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fae00440.css",
+    "static/js/main.04bcaa8b.js"
+  ]
+}
